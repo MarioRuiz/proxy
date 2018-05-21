@@ -14,7 +14,7 @@ You need to have Ruby installed already.
 1. Adding mock responses:
 	Responses can be added directly on your conditions.rb file, just specify the response like this:
 
-		```ruby
+```ruby
 				response=[200, {'Content-Type' => 'application/json'}, 
 				{ 
 					name: 'Peter Daily',
@@ -24,7 +24,7 @@ You need to have Ruby installed already.
 					balance: 4663
 				 }.to_json
 				]
-		``` 
+``` 
 		The response variable is an array of three positions: code, headers hash, response data
 		
 		To start the service, run in command line: `responses.rb`
