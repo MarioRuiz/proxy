@@ -15,27 +15,27 @@ You need to have Ruby installed already.
 	Responses can be added directly on your conditions.rb file, just specify the response like this:
 
 ```ruby
-				response=[200, {'Content-Type' => 'application/json'}, 
-				{ 
-					name: 'Peter Daily',
-					city: 'New York',
-					isClient: false,
-					currency: 'EUR',
-					balance: 4663
-				 }.to_json
-				]
+	response=[200, {'Content-Type' => 'application/json'}, 
+	{ 
+		name: 'Peter Daily',
+		city: 'New York',
+		isClient: false,
+		currency: 'EUR',
+		balance: 4663
+	 }.to_json
+	]
 ``` 
-		The response variable is an array of three positions: code, headers hash, response data
-		
-		To start the service, run in command line: `responses.rb`
+The response variable is an array of three positions: code, headers hash, response data
 
-        Defaults: port:8008, conditions file: conditions.rb
+To start the service, run in command line: `responses.rb`
 
-        Examples of use:
+Defaults: port:8008, conditions file: conditions.rb
 
-       `respones.rb`
+Examples of use:
 
-       `responses.rb my_conditions_file.rb`
+`respones.rb`
+
+`responses.rb my_conditions_file.rb`
 	 
 1. To start the proxy run on that folder from command line: `proxy.rb`
 	 
