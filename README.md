@@ -37,7 +37,7 @@ Examples of use:
 
 `responses.rb my_conditions_file.rb`
 	 
-1. To start the proxy run on that folder from command line: `proxy.rb`
+6. To start the proxy run on that folder from command line: `proxy.rb`
 	 
    Defaults: port:8008, conditions file: conditions.rb
    
